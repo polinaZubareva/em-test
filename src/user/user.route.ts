@@ -4,6 +4,7 @@ const userRouter = Router();
 
 userRouter.post('/', userController.post);
 userRouter.get('/', userController.getUsers);
-userRouter.delete('/', userController.delete);
+userRouter.delete('/:id', userController.delete);
+userRouter.put('/', userController.put);
 
 export { userRouter };
